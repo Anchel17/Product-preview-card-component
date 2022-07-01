@@ -36,7 +36,7 @@ main{
 
 .flex-container{
     display: flex;
-    width: 42vw;
+    width: 41vw;
     height: 67%;
     background-color: #fff;
     border: 1px solid var(--mainBackground);
