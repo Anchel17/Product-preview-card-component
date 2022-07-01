@@ -1,7 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
-/*font-family: 'Montserrat', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap');
+
 :root{
     --mainBackground:  hsl(30, 38%, 92%);
+    --title-color: hsl(212, 21%, 14%);
+    --font-color: hsl(228, 12%, 48%);
     --buttonColor: hsl(158, 36%, 37%);
 }
 
@@ -20,23 +22,94 @@
 
 body{
     background-color: var(--mainBackground);
+    font-family: 'Montserrat', sans-serif;
 }
 
 main{
+    color: var(--font-color);
+    width: 100%;
+    height: 100vh;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
 .flex-container{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-    background-color: white;
+    width: 42vw;
+    height: 67%;
+    background-color: #fff;
+    border: 1px solid var(--mainBackground);
+    border-radius: 12px;
+}
+
+.product-image{
+    width: 50%;
 }
 
 .product-image img{
-    width: 300px;
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+
+.product-description{
+    display: flex;
+    flex-direction: column;
+    padding-left: 2rem;
+    padding-top: 2rem;
+    padding-right: 2rem;
+    width: 50%;
+}
+
+.product-description h1{
+    font-family: 'Fraunces', serif;
+    color: var(--title-color);
+    padding-top: 1.2rem;
+}
+
+.product-description #perfume{
+    letter-spacing: 5px;
+    font-size: 12px;
+}
+
+.product-description #description{
+    font-size: 14px;
+    padding-top: 1.2rem;
+}
+
+.product-description .prices{
+    font-family: 'Fraunces', serif;
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    gap: 1.5rem;
+    color: var(--buttonColor);
+}
+
+.product-description .prices p{
+    color: var(--font-color);
+    text-decoration: line-through;
+    font-size: 12px;
+}
+
+.product-description button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--buttonColor);
+    color: #fff;
+    border: 1px solid var(--buttonColor);
+    border-radius: 10px;
+    padding: 1rem 0;
+    gap: 0.7rem;
+}
+
+.product-description button:hover{
+    cursor: pointer;
+    background-color: var(--title-color);
 }
