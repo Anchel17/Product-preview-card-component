@@ -36,15 +36,15 @@ main{
 
 .flex-container{
     display: flex;
-    width: 41vw;
-    height: 67%;
+    width: 40vw;
+    height: 65%;
     background-color: #fff;
     border: 1px solid var(--mainBackground);
     border-radius: 12px;
 }
 
 .product-image{
-    width: 50%;
+    width: 60%;
 }
 
 .product-image img{
@@ -57,14 +57,16 @@ main{
 .product-description{
     display: flex;
     flex-direction: column;
-    padding-left: 2rem;
+    padding-left: 1.5rem;
     padding-top: 2rem;
-    padding-right: 2rem;
+    padding-right: 1.5rem;
     width: 50%;
 }
 
 .product-description h1{
     font-family: 'Fraunces', serif;
+    font-size: 28px;
+    line-height: 95%;
     color: var(--title-color);
     padding-top: 1.2rem;
 }
@@ -76,7 +78,7 @@ main{
 
 .product-description #description{
     font-size: 14px;
-    padding-top: 1.2rem;
+    padding-top: 1.5rem;
 }
 
 .product-description .prices{
@@ -85,8 +87,8 @@ main{
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
     gap: 1.5rem;
     color: var(--buttonColor);
 }
